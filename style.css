@@ -1,0 +1,148 @@
+body {
+    font-family: sans-serif;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    background-color: #b2cad5;
+    scroll-behavior: smooth;
+}
+.landing {
+    background-color: #003A76;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.landing img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid white;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    margin-bottom: 25px;
+}
+.landing h1 {
+    margin: 10px 0;
+    font-size: 2.5rem;
+}
+.landing p {
+    font-style: italic;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+.landing a {
+    background-color: white;
+    color: #003A76;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.landing a:hover {
+    background-color: #b2cad5;
+    color: #003A76;
+}
+nav {
+    background-color: #003A76;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #b2cad5;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+section {
+    padding: 120px 20px 100px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+section.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+h2 {
+    font-size: 2rem;
+    color: #003A76;
+    margin-bottom: 20px;
+}
+p, li {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+.about {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.experience {
+    text-align: center;
+    margin-top: 100px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.experience ul {
+    list-style: none;
+    padding: 0;
+}
+.experience li {
+    margin-bottom: 20px;
+}
+.contact {
+    text-align: center;
+    margin-top: 100px;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.social-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.social a {
+    display: inline-block;
+    background-color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #003A76;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.social a:hover {
+    background-color: #003A76;
+    color: white;
+}

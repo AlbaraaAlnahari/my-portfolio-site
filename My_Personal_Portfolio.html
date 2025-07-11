@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="landing">
+    <img src="images/mine2.jpg" alt="صورة شخصية">
+    <h1>Welcome to Albaraa Portfolio</h1>
+    <p>"Life stops on you when you stop trying"</p>
+    <a href="#main">Enter Portfolio</a>
+</section>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="content" id="main">
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+            <strong>Hello! My name is Albaraa</strong> — a passionate learner and developer.<br>
+            I enjoy working on creative tech projects, exploring AI, and building modern web applications<br>
+            But that’s not all — I also love spending my free time working on side projects that sharpen my instincts and enhance my expertise<br>
+            <em>After all, sleeping is not always the best option for a programmer with big goals!</em>.<br><br>
+            <strong>مرحبًا! أنا البراء</strong> — متعلم شغوف ومطور طموح.<br>
+            أستمتع بالعمل على مشاريع تقنية إبداعية، واستكشاف عالم الذكاء الاصطناعي، وتطوير تطبيقات ويب حديثة.<br>
+            و مو بس كذا أحب أستغل وقت فراغي في بناء مشاريع جانبية تطوّر إحساسي البرمجي وتعزّز تخصصي.<br>
+            <em>فالنوم ليس الخيار الأفضل دائمًا للمبرمج اللي عنده طموحات كبيرة!</em>
+        </p>
+    </section>
+
+    <section class="experience" id="experience">
+        <h2>Previous Experiences</h2>
+        <ul>
+            <li><strong>Worked as a Summer Supervisor at Al-Aqsa Private and International Schools</strong></li>
+            <li><strong>Interned at Smart Methods, a company specialized in robotics</strong></li>
+            <li><strong>Previously hosted several programs and events</strong></li>
+            <li><strong>Volunteered in coding bootcamps</strong></li>
+            <li><strong>Experienced as a voice-over artist</strong></li>
+        </ul>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <div class="social">
+            <div class="social-item">
+                <img src="images/images.png" alt="LinkedIn">
+                <a href="https://sa.linkedin.com/in/albaraa-alnahari-53042532a" target="_blank">LinkedIn</a>
+            </div>
+            <div class="social-item">
+                <img src="images/X_logo.jpg" alt="Twitter">
+                <a href="https://x.com/x_ff" target="_blank">X</a>
+            </div>
+            <div class="social-item">
+                <img src="images/5f9b61e42640e.png" alt="Gmail">
+                <a href="mailto:cyper.pi.1@gmail.com">Gmail</a>
+            </div>
+            <div class="social-item">
+                <img src="images/2022-08-18-GitHub.jpg" alt="GitHub">
+                <a href="https://github.com/TTTT9" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+    // Scroll animation trigger
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('reveal');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+</script>
+
+</body>
+</html>

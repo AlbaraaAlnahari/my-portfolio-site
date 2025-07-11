@@ -43,7 +43,7 @@ A fully responsive and animated personal site built with:
 
 1. **Download** or **clone** the repository:
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/TTTT9/my-portfolio-site.git
 
 
 

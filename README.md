@@ -5,6 +5,14 @@ This is my **personal portfolio website** built with HTML and CSS, showcasing my
 
 ---
 
+
+## 🔗 Live Website
+
+[Click here to visit the portfolio](https://albaraaalnahari.github.io/my-portfolio-site/)
+
+---
+
+
 ## 🖥️ Project Overview
 
 A fully responsive and animated personal site built with:
